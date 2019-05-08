@@ -1,8 +1,10 @@
-
+import java.util.Scanner;
 
 public class Lesson3 {
     public static void main(String[] args) {
-        int[] a =new int[5];
+        int x;
+        x= pushNumber();
+        int[] a =new int[x];
         madeArr(a);
         arrSum(a);
         printArr(a);
@@ -26,6 +28,15 @@ public static void printArr (int[] arr){
         System.out.print(arr[i]+ " ");
     }
     System.out.println();
+}
+
+public static int pushNumber (){
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Сколько элементов в массиве?");
+    int n;
+    n = sc.nextInt();
+    sc.close();
+    return n;
 }
 
 }
