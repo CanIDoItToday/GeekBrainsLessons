@@ -3,13 +3,7 @@ import java.util.Scanner;
 
 public class Lesson3 {
     public static void main(String[] args) {
-        int x;
-        x = pushNumber();
-        int[] a = new int[x];
-        madeArr(a);
-        arrSum(a);
-        printArr(a);
-        System.out.println(arrSum(a));
+ eqls();
 
     }
 
@@ -51,6 +45,22 @@ public class Lesson3 {
 
 
     }
+    public static void printF (){
+        System.out.printf("Слово: %s, Число с плавающей запятой: %f, Целое число: %d, Символ: %c",
+                "Java", 2.5f, 20, 'e');
+    }
+    public static void eqls (){
+        String str1 = "A";
+        String str2 = "B";
+        String str3 = "C";
+        System.out.println(str1.equals(str2));
+        System.out.println(str1.equals(str3));
+        if(str1.equals(str1)){
+            System.out.println("Юра прости мы все проебали");
+
+        }
+    }
+
 
 }
 
